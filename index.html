@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나의 강의 대시보드</title>
+</head>
+<body>
+    <div class="dashboard">
+        <header class="site-header">
+            <p class="site-header__brand">learn/lab</p>
+        </header>
+        <main class="dashboard__main">
+            <header class="page-intro">
+                <p class="page-intro__eyebrow" lang="en">my learning</p>
+                <h1 id="page-title" class="page-intro__title">나의 강의 대시보드</h1>
+                <p class="page-intro__description">오늘도 한 걸음씩, 배움을 이어가세요.</p>
+            </header>
+            <section class="learning-status" aria-labelledby="learning-status-title">
+                <h2 id="learning-status-title" class="learning-status__title">학습 현황</h2>
+                <ul class="learning-status__list">
+                    <li class="learning-status__item">
+                        <span class="learning-status__label">전체 강의</span>
+                        <span class="learning-status__value">6개</span>
+                    </li>
+                    <li class="learning-status__item">
+                        <span class="learning-status__label">완료</span>
+                        <span class="learning-status__value">2개</span>
+                    </li>
+                    <li class="learning-status__item">
+                        <span class="learning-status__label">진행 중</span>
+                        <span class="learning-status__value">3개</span>
+                    </li>
+                </ul>
+            </section>
+            <section class="course-list">
+                <h2 class="course-list__title">수강 강의</h2>
+                <ul class="course-list__items">
+                    <li class="course-list__item course-card">
+                        <span class="course-card__number">course 01</span>
+                        <h3 id="course-01-title" class="course-card__title">HTML 시맨틱 마크업</h3>
+                        <span class="course-card__instructor">김하늘 · 강사</span>
+                        <div class="course-card__progress">
+                            <span class="course-card__status">완료</span>
+                            <span id="course-01-progress-label" class="course-card__progress-label">학습 진도</span>
+                            <span class="course-card__percentage">100%</span>
+                            <progress class="course-card__progress-bar" max="100" value="100" aria-labelledby="course-01-title course-01-progress-label">100%</progress>
+                        </div>
+                        <button class="course-card__detail-button" type="button" disabled aria-labelledby="course-01-title course-01-detail-label">
+                            <span id="course-01-detail-label" class="course-card__detail-label">상세보기</span>
+                        </button>
+                    </li>
+                </ul>
+                <p class="course-list__notice">상세보기 기능은 다음 단계에서 제공합니다.</p>
+            </section>
+        </main>
+        <footer class="site-footer">
+            <p class="site-footer__description">Frontend Lab · 매일 쌓아가는 배움</p>
+        </footer>
+    </div>
+</body>
+</html>
